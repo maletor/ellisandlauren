@@ -1683,7 +1683,7 @@ ul.media-list + ul .media-object {
  */
 
 footer {
-  background: url(../../images/bg/section_bg.jpg) no-repeat fixed center center;
+  background: url(../../images/bg/section_bg.jpg) no-repeat fixed center bottom;
   text-align: center;
 }
 footer .color-overlay {
