@@ -34,7 +34,7 @@ $(document).ready(function() {
       arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
       closeMarkup: '<button title="%title%" class="mfp-close"><i class="mfp-close-icn">&times;</i></button>',
       tPrev: 'Previous (Left arrow key)',
-      tNext: 'Next (Right arrow key)',
+      tNext: 'Next (Right arrow key)'
     }
   });
 
