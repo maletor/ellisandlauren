@@ -17,7 +17,7 @@ $(document).ready(function() {
     return false;
   });
 
-  var $grid = ('#photo-gallery').imagesLoaded(function() {
+  var $grid = $('#photo-gallery').imagesLoaded(function() {
     $grid.masonry({
       columnWidth: 0,
       itemSelector: '.item',
