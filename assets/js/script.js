@@ -17,27 +17,27 @@ $(document).ready(function() {
     return false;
   });
 
-  $('#photo-gallery').masonry({
-    columnWidth: 0,
-    itemSelector: '.item',
-    gutter: 30
+  var $grid = ('#photo-gallery').imagesLoaded(function() {
+    $grid.masonry({
+      columnWidth: 0,
+      itemSelector: '.item',
+      gutter: 30
+    });
   });
 
-  var $grid = $('.gallery-popup').imagesLoaded(function() {
-    $grid.magnificPopup({
-      type: 'image',
-      closeBtnInside: true,
-      removalDelay: 300,
-      gallery: {
-        enabled: true,
-        preload: [0,2],
-        navigateByImgClick: true,
-        arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-        closeMarkup: '<button title="%title%" class="mfp-close"><i class="mfp-close-icn">&times;</i></button>',
-        tPrev: 'Previous (Left arrow key)',
-        tNext: 'Next (Right arrow key)'
-      }
-    });
+  $('.gallery-popup').magnificPopup({
+    type: 'image',
+    closeBtnInside: true,
+    removalDelay: 300,
+    gallery: {
+      enabled: true,
+      preload: [0,2],
+      navigateByImgClick: true,
+      arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+      closeMarkup: '<button title="%title%" class="mfp-close"><i class="mfp-close-icn">&times;</i></button>',
+      tPrev: 'Previous (Left arrow key)',
+      tNext: 'Next (Right arrow key)'
+    }
   });
 
   var wow = new WOW({ mobile: false });
