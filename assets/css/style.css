@@ -189,7 +189,7 @@ ul, li {
 /*-----transparent background-----*/
 
 .color-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
   padding: 100px 0;
 }
 
@@ -1185,9 +1185,11 @@ ul, li {
  */
 
 .quote {
+  min-height: 500px;
   background: url(../../images/bg/quote_bg.jpg) no-repeat fixed center center;
 }
 .quote .color-overlay {
+  min-height: 500px;
   padding: 70px 0 60px;
 }
 blockquote {
@@ -1705,7 +1707,7 @@ footer .color-overlay {
   padding: 48px 0px;
   margin-bottom: 80px;
 }
-footer a .fa {
+footer .fa {
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
